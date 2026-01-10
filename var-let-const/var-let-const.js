@@ -96,3 +96,15 @@
 // }
 // console.log(window.alert); // fucntion
 
+// Global Lexical Environment {
+//     OER : {
+//         var x = 1;
+//         function func() {}
+//          window: window  // browser api
+//          global: global  // nodejs api
+//     },
+//     DER : {
+//         let a = 3;
+//         const b = 2;
+//     }
+// } 
