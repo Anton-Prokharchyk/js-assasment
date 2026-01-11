@@ -44,3 +44,15 @@
 
 // Func.call({ baz: 'baz' });
 // FuncArrow.call({ baz: 'baz' });
+
+// ============callbacks============
+
+// function callback() {
+// 	console.log('callback');
+// }
+
+// function a(callback) {
+// 	callback();
+// }
+
+// a(callback); // callback
