@@ -20,10 +20,9 @@
 
 // console.log('redeclare value',a); // 2
 
-// x = 1; 
+// x = 1;
 
 // console.log('declare without key word', x); // 1
-
 
 // -------------let-const-------------
 
@@ -107,4 +106,4 @@
 //         let a = 3;
 //         const b = 2;
 //     }
-// } 
+// }
