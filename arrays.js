@@ -79,3 +79,25 @@
 // });
 // console.log(arr); //  [ 1, 2, 3, 4 ]
 // console.log(index); // 2
+
+// ============includes============
+
+// const arr = [1, 2, 3, 4];
+// const index = arr.findIndex((item) => {
+// 	console.log(item);
+// 	return item > 2; //  returns the first true element
+// });
+// console.log(arr); //  [ 1, 2, 3, 4 ]
+// console.log(index); // 2
+
+// ============isArray============
+
+// const arr = [1, 2, 3, 4];
+// console.log(Array.isArray(arr)); // true
+
+// ============concat============
+
+// const arr = [1, 2];
+// const arr2 = [3, 4];
+// const arr3 = arr.concat(arr2);
+// console.log(arr3); // [ 1, 2, 3, 4 ]
