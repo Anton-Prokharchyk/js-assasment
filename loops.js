@@ -1,9 +1,23 @@
 //  ============for============
 
-// for (let i = 0; i < 10; i++) {
+// for (let i = 0; i < 3; i++) {
 // 	console.log(i);
 // }
 
+// for (let i = 0; i < 3; i++) {
+// 	setTimeout(() => console.log(i), 1000);
+// } // 0 1 2
+
+// console.log(i); // ReferenceError: i is not defined
+
+// ==================================================
+// for (var i = 0; i < 3; i++) {
+// 	setTimeout(() => console.log(i), 1000);
+// } // 3 3 3
+
+// console.log(i); // 3
+
+// ==================================================
 // function runTask() {
 // 	for (var i = 0; i < 3; i++) {
 // 		setTimeout(function () {
