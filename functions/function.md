@@ -6,8 +6,8 @@
 function foo() {}
 ```
 
-1. **hoisting** function body and name, can be called before declaration in code.
-2. get **this** when get called _( if called in gobal scope **this** would be window object in browser or global in nodejs, in strict mode **this** will be undefined)_
+1. **hoisting** function body and name, can be called before declaration in code ( hoisted before anything, so **var** can redeclare it )
+2. get **this** when get called _( if called in gobal scope **this** would be window object in browser or global in nodejs, in strict mode **this** will be undefined )_
 3. has pseudoarray **arguments** which contains all parameters of the fucntion
 4. can be used as **contructor**
 5. **this** can be asssigned or reassigned with **bind/call/apply**
@@ -36,7 +36,7 @@ var bar = () => {};
 ```
 
 1. **hoisting** only name not body, so we cant call the function, with **var** we will get **undefined** instead and with **const/let** we will get an error because of **TDZ**
-2. get **this** from lexical environment where it was declared
+2. get **this** from **lexical environment** where it was declared
 3. **this** can not be asssigned or reassigned with **bind/call/apply**
 4. do not have **arguments**
 5. can not be used as **constructor**

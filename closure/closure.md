@@ -1,6 +1,6 @@
 # Closure
 
-**Closure** - when fucntion saves reference to **LE(Lexical Environment)** where it was declared via **[[Environment]]** and can access variables even after outer function **Fucntion Execution Context** was done.
+**Closure** - when fucntion saves reference to **LE(Lexical Environment)** where it was declared via **[[Environment]]** and can access variables even after outer function **Fucntion Execution Context** was done and **Garbage Collector(GC)** has deleted unreachable data.
 
 ```js
 var v = 5;
@@ -74,25 +74,25 @@ function a1 = {
 
 function b2 = {
     FunctionExecutionContext = {
-    LexicalEnvironment: {
-        EnvironmentRecord: {
-            letvariable2: 10,
-            constvariable2: 11,
-            param2: 13,
-            functionDeclaration: {},
-            arguments: [13]
-        },
-        OuterEnvironmentReference: a1ExecutionContext.LexicalEnvironment
-    },
+      LexicalEnvironment: {
+          EnvironmentRecord: {
+              letvariable2: 10,
+              constvariable2: 11,
+              param2: 13,
+              functionDeclaration: {},
+              arguments: [13]
+          },
+          OuterEnvironmentReference: a1ExecutionContext.LexicalEnvironment
+      },
 
-    VariableEnvironment: {
-        EnvironmentRecord: {
-            varvariable2: 12,
-        },
-        OuterEnvironmentReference: a1ExecutionContext.LexicalEnvironment
-    },
+      VariableEnvironment: {
+          EnvironmentRecord: {
+              varvariable2: 12,
+          },
+          OuterEnvironmentReference: a1ExecutionContext.LexicalEnvironment
+      },
 
-        ThisBinding: window/global object, or undefined strict mode
+      ThisBinding: window/global object, or undefined strict mode
     }
 
     FunctionObject = {

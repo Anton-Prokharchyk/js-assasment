@@ -37,13 +37,36 @@
 // // console.log(i); // 3
 
 // ==================================================
+
 // function runTask() {
 // 	for (var i = 0; i < 3; i++) {
-// 		setTimeout(function () {
-// 			console.log(i);
-// 		}, 1000);
+// 		setTimeout(
+// 			function (j) {
+// 				console.log(j);
+// 			},
+// 			1000,
+// 			i,
+// 		);
 // 	}
+// } // 0 1 2
+
+// for (var i = 0; i < 3; i++) {
+// 	setTimeout(
+// 		(j) => {
+// 			console.log(j);
+// 		},
+// 		1000,
+// 		i,
+// 	);
 // }
+// for (var i = 0; i < 3; i++) {
+// 	((j) => {
+// 		setTimeout(() => {
+// 			console.log(j);
+// 		}, 1000);
+// 	})(i);
+// }
+// 0 1 2
 
 // function runTask() {
 // 	for (let i = 0; i < 3; i++) {
@@ -64,18 +87,6 @@
 // 		})(i);
 // 	}
 // } // 0
-
-// function runTask() {
-// 	for (var i = 0; i < 3; i++) {
-// 		setTimeout(
-// 			function (j) {
-// 				console.log(j);
-// 			},
-// 			1000,
-// 			i,
-// 		);
-// 	}
-// } // 0 1 2
 
 // runTask();
 
@@ -121,3 +132,8 @@
 // for (let i of arr) {
 // 	console.log(i);
 // }
+const arr = [1, 2, 3];
+console.log(arr.prototype);
+for (let key in arr) {
+	console.log(key);
+} // 0, 1, 2, foo

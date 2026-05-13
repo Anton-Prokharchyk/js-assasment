@@ -2,7 +2,7 @@
 
 ## var
 
-1. has function scope, does not create a new variable inside block scope **( {} )**
+1. has **function scope**, does not create a new variable inside **block scope ( {} )**
 2. **hoisting** without value, initialized with undefined, but accessible before decloration
 
 3. in the global scope becomes a part of **OER - Object Environment Record**, means added as property of **widnow/global**
@@ -21,7 +21,7 @@
 
 ## let/const
 
-1. has block scope **every {}**
+1. has **block scope**, every **{}** creates a new **block scope**
 2. hoisted but not initialized and get to **TDZ - Temporary Dead Zone**, means declared but not accessable -> **ReferenceError**
 3. it becomes a part of **DER Declarative Environment Record** and not become a part of **window/global**
 
